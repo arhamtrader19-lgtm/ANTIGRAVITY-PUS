@@ -1,0 +1,20 @@
+{
+  "name": "antigravity-push",
+  "version": "1.0.0",
+  "description": "code sir bro channel-youtube",
+  "keywords": [
+    "Java",
+    "Script",
+    "Backend",
+    "Tiny",
+    "Sir",
+    "Ai"
+  ],
+  "license": "ISC",
+  "author": "Hasnain Bro",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
