@@ -1,5 +1,5 @@
 {
-  "name": "antigravity-push",
+  "name": "hasnain-backend",
   "version": "1.0.0",
   "description": "code sir bro channel-youtube",
   "keywords": [
@@ -12,9 +12,31 @@
   ],
   "license": "ISC",
   "author": "Hasnain Bro",
-  "type": "commonjs",
-  "main": "index.js",
+  "private": true,
+  "type": "module",
+  "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js",
+    "debug": "nodemon --inspect src/index.js",
+    "debug:brk": "node --inspect-brk src/index.js",
+    "format": "prettier --write \"src/**/*.js\"",
+    "format:check": "prettier --check \"src/**/*.js\"",
+    "db:up": "docker compose up -d",
+    "db:down": "docker compose down",
+    "db:logs": "docker compose logs -f mongodb"
+  },
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.9",
+    "express": "^5.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11",
+    "prettier": "^3.9.10"
   }
 }

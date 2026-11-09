@@ -1,0 +1,6 @@
+node_modules
+package-lock.json
+public/temp
+_backup
+Readme.MD
+COURSE-NOTES.md

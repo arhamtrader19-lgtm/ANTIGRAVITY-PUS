@@ -1,0 +1,34 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug backend (nodemon)",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run", "debug"],
+            "console": "integratedTerminal",
+            "skipFiles": ["<node_internals>/**"],
+            "restart": true,
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug backend (stop on first line)",
+            "type": "node",
+            "request": "launch",
+            "program": "${workspaceFolder}/src/index.js",
+            "stopOnEntry": true,
+            "console": "integratedTerminal",
+            "skipFiles": ["<node_internals>/**"],
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Attach to running process",
+            "type": "node",
+            "request": "attach",
+            "port": 9229,
+            "restart": true,
+            "skipFiles": ["<node_internals>/**"]
+        }
+    ]
+}

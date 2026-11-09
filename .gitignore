@@ -1,0 +1,17 @@
+node_modules/
+.env
+.env.local
+.env.*.local
+.env
+public/temp/*
+!public/temp/.gitkeep
+logs/
+*.log
+npm-debug.log*
+.vscode/*
+!.vscode/launch.json
+!.vscode/settings.json
+.idea/
+.DS_Store
+Thumbs.db
+_backup/
